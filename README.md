@@ -1,1 +1,1 @@
-# Vite/React Tailwind Starter
+# FaceHook Social Media Platform
