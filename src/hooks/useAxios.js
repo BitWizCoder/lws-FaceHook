@@ -54,7 +54,7 @@ const useAxios = () => {
     };
   }, [auth.authToken]);
 
-  return { api };
+  return {api};
 };
 
 export default useAxios;
