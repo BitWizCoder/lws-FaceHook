@@ -3,12 +3,13 @@ import { Link } from "react-router";
 import Logo from "../../assets/images/logo.svg";
 import Home from "../../assets/icons/home.svg";
 import Notification from "../../assets/icons/notification.svg";
-import Avatar from "../../assets/images/avatars/avatar_1.png";
 import Logout from "../auth/Logout";
 import useAuth from "../../hooks/useAuth";
+import useProfile from "../../hooks/useProfile";
 
 export default function Header() {
   const { auth } = useAuth();
+  const { state } = useProfile();
 
   return (
     <nav className="flex items-center justify-center sticky top-0 z-50 border-b border-[#3F3F3F] bg-[#1E1F24] py-4">
